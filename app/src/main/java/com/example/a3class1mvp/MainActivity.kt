@@ -32,15 +32,18 @@ class MainActivity : AppCompatActivity(), CounterView {
         binding.countTv.text = number.toString()
     }
 
-
-    override fun update(number: Int) {
-        if (number == 10) {
-            Toast.makeText(this, "show MSG", Toast.LENGTH_SHORT).show()
-        } else if (number == 15) {
-            binding.countTv.setTextColor(Color.parseColor("#4CAF50"))
-        } else {
-            binding.countTv.setTextColor(Color.parseColor("#FF000000"))
-        }
+    override fun chaneColorGreen(color: String) {
+        binding.countTv.setTextColor(Color.parseColor(color))
     }
+
+    override fun chaneColorBlack(color: String) {
+        binding.countTv.setTextColor(Color.parseColor(color))
+    }
+
+    override fun showToast(msg: String) {
+        Toast.makeText(this, "show MSG", Toast.LENGTH_SHORT).show()
+    }
+
+
 }
 
