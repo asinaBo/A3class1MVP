@@ -29,12 +29,12 @@ class Presenter {
 
     private fun update() {
         if (model.number == 10) {
-           counterView.showToast("show MSG")
+           counterView.showToast("SHOW TOAST!!!")
         } else if (model.number >= 15) {
-            counterView.chaneColorGreen(model.colorGreen)
+            counterView.chaneColor(model.colorGreen)
 
         } else {
-            counterView.chaneColorGreen(model.colorBlack)
+            counterView.chaneColor(model.colorBlack)
 
         }
     }

@@ -32,11 +32,7 @@ class MainActivity : AppCompatActivity(), CounterView {
         binding.countTv.text = number.toString()
     }
 
-    override fun chaneColorGreen(color: String) {
-        binding.countTv.setTextColor(Color.parseColor(color))
-    }
-
-    override fun chaneColorBlack(color: String) {
+    override fun chaneColor(color: String) {
         binding.countTv.setTextColor(Color.parseColor(color))
     }
 
